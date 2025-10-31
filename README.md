@@ -26,6 +26,8 @@ We curate MME-CoF, a compact benchmark providing a standardized taxonomy and an 
   <img src="figs/wordcloud.png" alt="MME-CoF word cloud" width="25%">
 </p>
 
+<p align="center"><em>Evaluation Radar Map, Category Distribution, and Word Cloud of MME-CoF.</em></p>
+
 
 ## 📜 Citation
 
