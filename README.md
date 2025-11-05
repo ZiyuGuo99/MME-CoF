@@ -43,7 +43,7 @@ git clone https://huggingface.co/datasets/ZiyuG/MME-CoF
 
 ### Run Evaluation
 
-By default, each image is padded to 16:9, and the video model generates **six videos per image**. We evaluate using **gemini-2.5-pro**.
+By default, each image is padded to 16:9, and the video model generates **six videos per image**. We evaluate using **Gemini-2.5-Pro**.
 
 1. Place `evaluate.py` and `genai_client.py` under the dataset folder  
 2. Edit **line 24** in `genai_client.py` to add your Google AI API Key  
