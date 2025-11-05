@@ -17,13 +17,13 @@ def process_json_data(data_file: str = "data.json"):
 
     # Check data file
     if not os.path.exists(data_file):
-        print(f"❌ Data file does not exist: {data_file}")
+        print(f"Data file does not exist: {data_file}")
         return
 
     # Initialize GenAI client
     genai_client = initialize_genai_client()
     if not genai_client:
-        print("❌ Unable to initialize video generation client; skipping generation step")
+        print("Unable to initialize video generation client; skipping generation step")
 
     # Read data
     with open(data_file, 'r', encoding='utf-8') as f:
@@ -35,7 +35,7 @@ def process_json_data(data_file: str = "data.json"):
 
     for i, item in enumerate(data):
         if "image" not in item or "reasoning_prompt" not in item:
-            print(f"❌ Item {i+1} missing required fields, skipping")
+            print(f"Item {i+1} missing required fields, skipping")
             continue
 
         print(f"\n{Fore.BLUE}[{i+1}/{len(data)}] Processing item: {item['image']}{Style.RESET_ALL}")
@@ -77,10 +77,10 @@ def process_json_data(data_file: str = "data.json"):
                         success = generate_video_from_image(genai_client, image_path, prompt, video_path, video_num)
 
                         if success:
-                            print(f"✅ Video #{video_num} succeeded on attempt {attempt}!")
+                            print(f"Video #{video_num} succeeded on attempt {attempt}!")
                             break
                         else:
-                            print(f"❌ Video #{video_num} failed on attempt {attempt}")
+                            print(f"Video #{video_num} failed on attempt {attempt}")
                             if attempt < max_retries:
                                 retry_wait = 30
                                 print(f"⏳ Waiting {retry_wait} seconds before retry...")
@@ -92,7 +92,7 @@ def process_json_data(data_file: str = "data.json"):
                 if success:
                     item_result["generated_videos"].append(video_path)
                     successful_generations += 1
-                    print(f"✅ Video #{video_num} generated: {video_path}")
+                    print(f"Video #{video_num} generated: {video_path}")
 
                     # Small delay before evaluation
                     print(f"⏳ Waiting 2 seconds before evaluating video #{video_num}...")
@@ -103,7 +103,7 @@ def process_json_data(data_file: str = "data.json"):
 
                     # Add None check to prevent errors
                     if evaluation_result is None:
-                        print(f"⚠️  Warning: Evaluation returned None for video #{video_num}")
+                        print(f"!  Warning: Evaluation returned None for video #{video_num}")
                         evaluation_result = f"error: Evaluation returned None for video #{video_num}"
 
                     item_result["evaluation_results"][video_path] = {
@@ -112,7 +112,7 @@ def process_json_data(data_file: str = "data.json"):
                         "status": "success" if evaluation_result and not evaluation_result.startswith("error:") else "failed"
                     }
 
-                    print(f"✅ Evaluation for video #{video_num} completed")
+                    print(f"Evaluation for video #{video_num} completed")
 
                     # Rest between videos
                     if video_num < NUM_VIDEOS_PER_ITEM:
@@ -123,7 +123,7 @@ def process_json_data(data_file: str = "data.json"):
                 else:
                     # All retries failed
                     error_msg = f"Video #{video_num} generation failed after {max_retries} attempts"
-                    print(f"❌ {error_msg}")
+                    print(f"{error_msg}")
                     generation_errors.append(error_msg)
 
                     # Even after failure, wait a bit before moving on
@@ -135,11 +135,11 @@ def process_json_data(data_file: str = "data.json"):
         else:
             if not genai_client:
                 error_msg = "GenAI client not available"
-                print(f"❌ {error_msg}")
+                print(f"{error_msg}")
                 generation_errors.append(error_msg)
             elif not os.path.exists(image_path):
                 error_msg = f"Image file not found: {image_path}"
-                print(f"❌ {error_msg}")
+                print(f"{error_msg}")
                 generation_errors.append(error_msg)
 
         # Record generation errors
@@ -182,7 +182,7 @@ def process_json_data(data_file: str = "data.json"):
         with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
             json.dump(results, f, ensure_ascii=False, indent=4)
 
-        print(f"\n✅ Item {i+1} done:")
+        print(f"\nItem {i+1} done:")
         print(f"   - Generated successfully: {successful_generations}/{NUM_VIDEOS_PER_ITEM} videos")
         print(f"   - Evaluated successfully: {successful_evaluations}/{total_evaluations} videos")
         print(f"   - Intermediate results saved")
@@ -233,5 +233,4 @@ def process_json_data(data_file: str = "data.json"):
 
 if __name__ == "__main__":
     init()  # Initialize colorama
-
     process_json_data()
