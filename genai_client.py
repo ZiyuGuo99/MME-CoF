@@ -15,9 +15,9 @@ try:
     from google import genai
     from google.genai import types
     GENAI_AVAILABLE = True
-    print("✅ Google GenAI imported successfully")
+    print("Google GenAI imported successfully")
 except ImportError as e:
-    print(f"❌ Google GenAI not available: {e}")
+    print(f"Google GenAI not available: {e}")
     GENAI_AVAILABLE = False
 
 # === Configuration ===
@@ -26,7 +26,7 @@ GOOGLE_API_KEY = None  # Set your Google AI API Key
 # Evaluation config
 SAMPLE_FRAMES = 16
 MODEL_NAME = "gemini-2.5-pro"
-NUM_VIDEOS_PER_ITEM = 2  # Generate 6 videos per item
+NUM_VIDEOS_PER_ITEM = 6  # Generate 6 videos per item
 
 # Evaluation prompts
 TEXT_PROMPT_1 = "Evaluate whether the following video faithfully and coherently visualizes the process described in the text."
@@ -89,23 +89,23 @@ def initialize_genai_client():
     Initialize Google GenAI client
     """
     if not GENAI_AVAILABLE:
-        print("❌ Google GenAI not available")
+        print("Google GenAI not available")
         return None
 
     try:
         # Try using API Key
         if GOOGLE_API_KEY:
             client = genai.Client(api_key=GOOGLE_API_KEY)
-            print("✅ GenAI client initialized with API key")
+            print("GenAI client initialized with API key")
             return client
         else:
             return genai.Client()
-        print("❌ No valid authentication found for GenAI")
+        print("No valid authentication found for GenAI")
         print("Please provide GOOGLE_API_KEY or arc.json file")
         return None
 
     except Exception as e:
-        print(f"❌ Failed to initialize GenAI client: {e}")
+        print(f"Failed to initialize GenAI client: {e}")
         return None
 
 def generate_video_from_image(genai_client, image_path: str, prompt: str, output_path: str, video_id: int):
@@ -115,7 +115,7 @@ def generate_video_from_image(genai_client, image_path: str, prompt: str, output
     print(f"{Fore.CYAN}Generating video #{video_id}: {image_path} -> {output_path}{Style.RESET_ALL}")
 
     if not genai_client:
-        print("❌ GenAI client not available")
+        print("GenAI client not available")
         return False
 
     # Create temp padded image path
@@ -128,7 +128,7 @@ def generate_video_from_image(genai_client, image_path: str, prompt: str, output
 
         # Save temp padded image
         padded_img.save(temp_padded_path, format='JPEG', quality=95)
-        print(f"✅ Padded image saved: {temp_padded_path}")
+        print(f"Padded image saved: {temp_padded_path}")
 
         # Read padded image
         with open(temp_padded_path, "rb") as f:
@@ -137,7 +137,7 @@ def generate_video_from_image(genai_client, image_path: str, prompt: str, output
         # Detect image format
         mime_type = "image/jpeg"
         image = types.Image(image_bytes=image_bytes, mime_type=mime_type)
-        print(f"✅ Padded image loaded: {len(image_bytes)} bytes, {mime_type}")
+        print(f"Padded image loaded: {len(image_bytes)} bytes, {mime_type}")
 
         # Send generation request (removed aspect_ratio to avoid errors)
         print(f"🚀 Sending generation request #{video_id}...")
@@ -150,7 +150,7 @@ def generate_video_from_image(genai_client, image_path: str, prompt: str, output
             )
         )
 
-        print(f"✅ Request #{video_id} sent, operation ID: {operation.name}")
+        print(f"Request #{video_id} sent, operation ID: {operation.name}")
 
         # Poll until done
         print(f"⏳ Waiting for video generation #{video_id}...")
@@ -165,10 +165,10 @@ def generate_video_from_image(genai_client, image_path: str, prompt: str, output
             operation = genai_client.operations.get(operation)
 
         if not operation.done:
-            print(f"❌ Video #{video_id} generation timeout")
+            print(f"Video #{video_id} generation timeout")
             return False
 
-        print(f"✅ Video #{video_id} generation completed!")
+        print(f"Video #{video_id} generation completed!")
 
         # Save video
         if hasattr(operation, 'response') and operation.response:
@@ -203,20 +203,20 @@ def generate_video_from_image(genai_client, image_path: str, prompt: str, output
                         f.write(video_data)
 
                     size_mb = len(video_data) / (1024 * 1024)
-                    print(f"✅ Video #{video_id} saved: {output_path} ({size_mb:.1f} MB)")
+                    print(f"Video #{video_id} saved: {output_path} ({size_mb:.1f} MB)")
                     return True
                 else:
-                    print(f"❌ No video data found for video #{video_id}")
+                    print(f"No video data found for video #{video_id}")
                     return False
             else:
-                print(f"❌ No videos in response for video #{video_id}")
+                print(f"No videos in response for video #{video_id}")
                 return False
         else:
-            print(f"❌ No response from operation for video #{video_id}")
+            print(f"No response from operation for video #{video_id}")
             return False
 
     except Exception as e:
-        print(f"❌ Error generating video #{video_id}: {e}")
+        print(f"Error generating video #{video_id}: {e}")
         return False
 
     finally:
@@ -284,7 +284,7 @@ def evaluate_video(video_path: str, input_description: str, video_id: int):
                 )
 
                 result = response.text
-                print(f"✅ Evaluation #{video_id} completed")
+                print(f"Evaluation #{video_id} completed")
                 print(f"{Fore.YELLOW} The response from the model is: {Style.RESET_ALL}", result)
                 sleep(1)
                 print(result)
@@ -299,5 +299,5 @@ def evaluate_video(video_path: str, input_description: str, video_id: int):
         return f"error: Evaluation failed for video #{video_id} after retries"
 
     except Exception as e:
-        print(f"❌ Error evaluating video #{video_id}: {e}")
+        print(f"Error evaluating video #{video_id}: {e}")
         return f"error: {str(e)}"
