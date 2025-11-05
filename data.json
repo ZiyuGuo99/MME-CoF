@@ -1,0 +1,16 @@
+[
+  {
+    "idx": 0,
+    "image": "visual_detail_reasoning/1.jpg",
+    "category": "visual detail reasoning",
+    "question": "What is the color of the Apple logo?",
+    "reasoning_prompt": "Zoom in on the black bag with the Apple logo to focus on the logo's color. Static shot."
+  },
+  {
+    "idx": 1,
+    "image": "visual_detail_reasoning/2.jpg",
+    "category": "visual detail reasoning",
+    "question": "What is the color of the handbag?",
+    "reasoning_prompt": "Gradually zoom in on the group of people walking along the path, centering on the person carrying the handbag. Keep the surrounding park and benches softly blurred to emphasize the handbag’s color. Static shot."
+  }
+]
