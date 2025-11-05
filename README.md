@@ -6,8 +6,8 @@ Official repository for the project "[Are Video Models Ready as Zero-Shot Reason
 
 
 ## 💥 News
-- **[2025.11.03]** 🔥 We release the [evaluation code](https://github.com/ZiyuGuo99/MME-CoF?tab=readme-ov-file#evaluation)!
-- **[2025.11.03]** 🔥 We publish MME-CoF benchmark data at [[🤗 Huggingface Dataset]](https://huggingface.co/datasets/ZiyuG/MME-CoF)
+- **[2025.11.03]** 🔥 We release the [evaluation code](https://github.com/ZiyuGuo99/MME-CoF?tab=readme-ov-file#evaluation).
+- **[2025.11.03]** 🔥 We publish MME-CoF benchmark data at [[🤗 Huggingface Dataset]](https://huggingface.co/datasets/ZiyuG/MME-CoF).
 - **[2025.11.01]** 🚀 We release the [arXiv paper](https://arxiv.org/pdf/2510.26802).
 
 
@@ -19,9 +19,7 @@ Official repository for the project "[Are Video Models Ready as Zero-Shot Reason
 
 <p align="center"><em>Overview of Our Study on the Reasoning Potential of Video Models.</em></p>
 
-We investigate a key question: **Are current video models reliable zero-shot reasoners?**
-
-While modern video models can “see the world” and show promising ability to perceive, understand, and manipulate complex visual scenes, their **actual reliability in visual reasoning** remains unverified.
+We investigate a key question: ***Are current video models reliable zero-shot reasoners?*** While modern video models can “see the world” and show promising ability to perceive, understand, and manipulate complex visual scenes, their **actual reliability in visual reasoning** remains unverified.
 
 We conduct a comprehensive Chain-of-Frame (CoF) evaluation of the leading model Veo-3 across 12 core dimensions and introduce MME-CoF, a compact and standardized benchmark for systematic CoF reasoning assessment. Our findings show that current video models are **not yet** dependable standalone zero-shot reasoners, but they demonstrate strong potential as powerful visual perception and scene-understanding modules to complement dedicated reasoning systems.
 
@@ -36,14 +34,14 @@ We provide the *first* investigation of video models (Veo-3) to analyze their vi
 
 ## 💪 Evaluation
 
-### 📥 Download Dataset
+### Download Dataset
 
 ```bash
 git lfs install
 git clone https://huggingface.co/datasets/ZiyuG/MME-CoF
 ```
 
-### ▶️ Run Evaluation
+### Run Evaluation
 
 By default, each image is padded to 16:9, and the video model generates **six videos per image**. We evaluate using **gemini-2.5-pro**.
 
