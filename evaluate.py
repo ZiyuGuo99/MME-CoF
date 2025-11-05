@@ -4,7 +4,7 @@ from genai_client import (
     initialize_genai_client, generate_video_from_image, evaluate_video
 )
 
-NUM_VIDEOS_PER_ITEM = 2
+NUM_VIDEOS_PER_ITEM = 6
 OUTPUT_JSON = "mme-cof_eval_results.json"
 
 def process_json_data(data_file: str = "data.json"):
