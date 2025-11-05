@@ -4,7 +4,6 @@ Official repository for the project "[Are Video Models Ready as Zero-Shot Reason
 
 [🌍 [Homepage](https://video-cof.github.io/)] [📖 [arXiv Paper](https://arxiv.org/pdf/2510.26802)] [🤗 [HF Datasets](https://huggingface.co/datasets/ZiyuG/MME-CoF)]
 
-Evaluation code will be released soon.
 
 ## 🧠 Study Overview
 
