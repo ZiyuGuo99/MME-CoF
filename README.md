@@ -6,7 +6,7 @@ Official repository for the project "[Are Video Models Ready as Zero-Shot Reason
 
 
 ## 💥 News
-- **[2025.11.04]** 🔥 We release the [evaluation code](https://github.com/ZiyuGuo99/MME-CoF?tab=readme-ov-file#evaluation).
+- **[2025.11.04]** 🔥 We release the [evaluation code](https://github.com/ZiyuGuo99/MME-CoF?tab=readme-ov-file#-evaluation).
 - **[2025.11.03]** 🔥 We publish MME-CoF benchmark data at [[🤗 Huggingface Dataset]](https://huggingface.co/datasets/ZiyuG/MME-CoF).
 - **[2025.11.01]** 🚀 We release the [arXiv paper](https://arxiv.org/pdf/2510.26802).
 
