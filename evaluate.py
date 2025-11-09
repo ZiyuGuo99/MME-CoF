@@ -72,7 +72,7 @@ def process_json_data(data_file: str = "data.json"):
 
                 if not os.path.exists(video_path):
                     for attempt in range(1, max_retries + 1):
-                        print(f"🎬 Video #{video_num} generation attempt {attempt}/{max_retries}")
+                        print(f"Video #{video_num} generation attempt {attempt}/{max_retries}")
 
                         success = generate_video_from_image(genai_client, image_path, prompt, video_path, video_num)
 
@@ -83,7 +83,7 @@ def process_json_data(data_file: str = "data.json"):
                             print(f"Video #{video_num} failed on attempt {attempt}")
                             if attempt < max_retries:
                                 retry_wait = 30
-                                print(f"⏳ Waiting {retry_wait} seconds before retry...")
+                                print(f"Waiting {retry_wait} seconds before retry...")
                                 time.sleep(retry_wait)
                 else:
                     success = True
@@ -95,7 +95,7 @@ def process_json_data(data_file: str = "data.json"):
                     print(f"Video #{video_num} generated: {video_path}")
 
                     # Small delay before evaluation
-                    print(f"⏳ Waiting 2 seconds before evaluating video #{video_num}...")
+                    print(f"Waiting 2 seconds before evaluating video #{video_num}...")
                     time.sleep(2)
 
                     # Evaluate the generated video
@@ -117,7 +117,7 @@ def process_json_data(data_file: str = "data.json"):
                     # Rest between videos
                     if video_num < NUM_VIDEOS_PER_ITEM:
                         wait_time = 10
-                        print(f"⏳ Waiting {wait_time} seconds before generating the next video...")
+                        print(f"Waiting {wait_time} seconds before generating the next video...")
                         time.sleep(wait_time)
 
                 else:
@@ -129,7 +129,7 @@ def process_json_data(data_file: str = "data.json"):
                     # Even after failure, wait a bit before moving on
                     if video_num < NUM_VIDEOS_PER_ITEM:
                         wait_time = 30
-                        print(f"⏳ Waiting {wait_time} seconds before continuing to the next video...")
+                        print(f"Waiting {wait_time} seconds before continuing to the next video...")
                         time.sleep(wait_time)
 
         else:
@@ -154,7 +154,7 @@ def process_json_data(data_file: str = "data.json"):
 
         for video_file in existing_videos:
             video_path = os.path.join(output_dir, video_file)
-            print(f"📹 Found existing video, evaluating: {video_file}")
+            print(f"Found existing video, evaluating: {video_file}")
 
             evaluation_result = evaluate_video(video_path, prompt, 0)
             item_result["evaluation_results"][video_path] = {
@@ -190,7 +190,7 @@ def process_json_data(data_file: str = "data.json"):
         # Rest between items
         if i < len(data) - 1:
             wait_time = 10
-            print(f"⏳ Waiting {wait_time} seconds before processing the next item...")
+            print(f"Waiting {wait_time} seconds before processing the next item...")
             time.sleep(wait_time)
 
     # Build final summary
@@ -220,7 +220,7 @@ def process_json_data(data_file: str = "data.json"):
         json.dump(final_summary, f, ensure_ascii=False, indent=4)
 
     print(f"\n{Fore.GREEN}{'='*60}{Style.RESET_ALL}")
-    print(f"{Fore.GREEN}🎉 All processing complete!{Style.RESET_ALL}")
+    print(f"{Fore.GREEN}All processing complete!{Style.RESET_ALL}")
     print(f"{Fore.GREEN}Total items: {total_items}{Style.RESET_ALL}")
     print(f"{Fore.GREEN}Total video requests: {total_videos_requested} ({NUM_VIDEOS_PER_ITEM}x{total_items}){Style.RESET_ALL}")
     print(f"{Fore.GREEN}Videos generated successfully: {total_videos_generated} ({total_videos_generated/total_videos_requested*100:.1f}%){Style.RESET_ALL}")
