@@ -11,7 +11,7 @@
     "image": "visual_detail_reasoning/2.jpg",
     "category": "visual detail reasoning",
     "question": "What is the color of the handbag?",
-    "reasoning_prompt": "Gradually zoom in on the group of people walking along the path, centering on the person carrying the handbag. Keep the surrounding park and benches softly blurred to emphasize the handbag’s color. Static shot."
+    "reasoning_prompt": "Gradually zoom in on the group of people walking along the path, centering on the person carrying the handbag. Keep the surrounding park and benches softly blurred to emphasize the handbag's color. Static shot."
   },
   {
     "idx": 2,
@@ -29,387 +29,814 @@
   },
   {
     "idx": 4,
+    "image": "visual_detail_reasoning/5.jpg",
+    "category": "visual detail reasoning",
+    "question": "Is the flag blue and yellow or red and yellow?",
+    "reasoning_prompt": "Zoom in on the flag on the left building to focus on its color. Static shot."
+  },
+  {
+    "idx": 5,
+    "image": "visual_detail_reasoning/6.jpg",
+    "category": "visual detail reasoning",
+    "question": "What is the color of the clock?",
+    "reasoning_prompt": "Zoom in on the clock behind the shop window glass to focus on its color and details. Static shot."
+  },
+  {
+    "idx": 6,
+    "image": "visual_detail_reasoning/7.jpg",
+    "category": "visual detail reasoning",
+    "question": "Is the scooter on the left or right side of the cyclist?",
+    "reasoning_prompt": "Rapid zoom from a wide shot to a close-up, then pan left to right to focus on each person and vehicle."
+  },
+  {
+    "idx": 7,
+    "image": "visual_detail_reasoning/8.jpg",
+    "category": "visual detail reasoning",
+    "question": "Is the blue bottle on the left or right side of the carton?",
+    "reasoning_prompt": "Zoom in on the blue bottle and the carton. Static shot."
+  },
+  {
+    "idx": 8,
+    "image": "visual_detail_reasoning/9.jpg",
+    "category": "visual detail reasoning",
+    "question": "Is the volleyball on the left or right side of the man with white cap?",
+    "reasoning_prompt": "Zoom in on the volleyball and the man with white cap. Static shot."
+  },
+  {
+    "idx": 9,
+    "image": "visual_detail_reasoning/10.jpg",
+    "category": "visual detail reasoning",
+    "question": "What kind of animal is in the poster?",
+    "reasoning_prompt": "Zoom in on the poster on the building to focus on its details. Static shot."
+  },
+  {
+    "idx": 10,
     "image": "visual_trace_reasoning/1.jpg",
     "category": "visual trace reasoning",
     "question": "Starting from the red dot, follow the given movement instructions and answer which position (A, B, C, or D) you arrive at.",
     "reasoning_prompt": "Starting at the red dot in the middle-right cell, animate step-by-step moves: go down 1 cell, left 1, left 1, up 1, and up 1, drawing arrows for each step and finishing with a glow around the final cell. Static shot."
   },
   {
-    "idx": 5,
+    "idx": 11,
     "image": "visual_trace_reasoning/2.jpg",
     "category": "visual trace reasoning",
     "question": "Starting from the red dot, follow the given movement instructions and answer which position (A, B, C, or D) you arrive at.",
     "reasoning_prompt": "From the red dot, animate a step right by one cell into the top-right square, then a step down by one cell into the middle-right square, drawing arrows for each move and finishing with a glow around the final cell. Static shot."
   },
   {
-    "idx": 6,
+    "idx": 12,
     "image": "visual_trace_reasoning/3.jpg",
     "category": "visual trace reasoning",
     "question": "The character must avoid falling into the frozen lake and reach the gift pack safely.",
     "reasoning_prompt": "Animate the elf moving step by step toward the gift while carefully avoiding the icy frozen lake. Highlight the successful path and end with the elf standing beside the gift. Static shot."
   },
   {
-    "idx": 7,
+    "idx": 13,
     "image": "visual_trace_reasoning/4.jpg",
     "category": "visual trace reasoning",
     "question": "The character must avoid falling into the frozen lake and reach the gift pack safely.",
     "reasoning_prompt": "Animate the red triangle moving step by step toward the white printer, picking it up once it reaches it. Then have the triangle carry the printer upward and place it on the brown area representing the table. End with a subtle highlight around the printer to show it is toggled on. Static shot."
   },
   {
-    "idx": 8,
+    "idx": 14,
     "image": "visual_trace_reasoning/5.jpg",
     "category": "visual trace reasoning",
     "question": "Move the character (red triangle) to pick up the white printer and place it anywhere on the desk.",
     "reasoning_prompt": "Animate the red triangle moving step by step toward the white printer, picking it up once it reaches it. Then have the triangle carry the printer upward and place it on the brown area representing the table. End with a subtle highlight around the printer to show it is toggled on. Static shot."
   },
   {
-    "idx": 9,
+    "idx": 15,
     "image": "visual_trace_reasoning/6.jpg",
     "category": "visual trace reasoning",
     "question": "The given picture is a maze, and the black lines represent walls that cannot be walked. Now you want to walk from the blue point to the red point. Is there a feasible path? If so, which of the green marks numbered 1-5 in the picture must be passed in the path?",
-    "reasoning_prompt": "Animate a bright path tracing from the blue point at the top through the maze’s open corridors toward the red point at the bottom, highlighting each green numbered mark it passes. Keep the maze and all walls fixed while the glowing path moves smoothly through the correct route. Static shot."
+    "reasoning_prompt": "Animate a bright path tracing from the blue point at the top through the maze's open corridors toward the red point at the bottom, highlighting each green numbered mark it passes. Keep the maze and all walls fixed while the glowing path moves smoothly through the correct route. Static shot."
   },
   {
-    "idx": 10,
+    "idx": 16,
     "image": "visual_trace_reasoning/7.jpg",
     "category": "visual trace reasoning",
     "question": "In the diagram, the red arrow is the initial arrow, and the green arrow is the final arrow. The arrow can move in four directions (forward, backward, left, right), where 'forward' always refers to the current direction the arrow is pointing. After each movement, the arrow's direction is updated to the direction of movement. Which of the following paths can make the arrow move from the starting position to the ending position?",
     "reasoning_prompt": "Create a 2D animation based on the provided diagram. The red arrow is the initial arrow, and the green arrow is the final arrow. The arrow can move in four directions (forward, backward, left, right), where 'forward' always refers to the current direction the arrow is pointing. After each movement, the arrow's direction is updated to the direction of movement. Movement commands: - The red arrow moves forward for 1 unit. - The red arrow moves left for 1 unit (relative to its new current direction after step 1). Then turns green. Scene: - No change in scene composition. - No change in the layout of the diagram. Camera: - Static camera. - No zoom. - No pan. - No glitches, noise, or artifacts."
   },
   {
-    "idx": 11,
+    "idx": 17,
     "image": "visual_trace_reasoning/8.jpg",
     "category": "visual trace reasoning",
     "question": "What are the advantages of the green route and the red route respectively?",
     "reasoning_prompt": "Two small characters start from the same purple origin and move along the red and green paths toward another purple destination at the same speed. Static camera, no zoom, no pan."
   },
   {
-    "idx": 12,
+    "idx": 18,
+    "image": "visual_trace_reasoning/9.jpg",
+    "category": "visual trace reasoning",
+    "question": "Which place is not passed when walking from the kitchen to Bedroom 1? options: linen, great room, bedroom 2, patio",
+    "reasoning_prompt": "Keep the camera in an overhead (top-down) view as a person walks directly from the kitchen to bedroom 1. Static shot."
+  },
+  {
+    "idx": 19,
+    "image": "visual_trace_reasoning/10.jpg",
+    "category": "visual trace reasoning",
+    "question": "Starting from the red dot, follow the given movement instructions and determine the final position. Right 1, down-1, right-1, down-1, left-1, left-1.",
+    "reasoning_prompt": "Starting at the red dot in the middle-right cell, animate step-by-step moves: right 1, down-1, right-1, down-1, left-1, and left-1, drawing arrows for each step and finishing with a glow around the final cell. Static shot."
+  },
+  {
+    "idx": 20,
     "image": "real_world_spatial_reasoning/1.jpg",
     "category": "real world spatial reasoning",
     "question": "The balcony is north relative to the door, in which direction on the balcony is the chair in the second picture?\nOptions: A: East, B: Southwest, C: South, D: Southeast.",
     "reasoning_prompt": "A red arrow point from the green chair toward the balcony. Another red arrow point from the door to the balcony. Static camera view, no zoom or pan."
   },
   {
-    "idx": 13,
+    "idx": 21,
     "image": "real_world_spatial_reasoning/2.jpg",
     "category": "real world spatial reasoning",
     "question": "From the perspective of the player wearing jersey number 10 in purple, where is the basketball? options: [\"Left front\", \"can not determine\", \"can not determine\", \"Right front\"]",
     "reasoning_prompt": "An arrow points from the player wearing jersey number 10 in purpleto the basketball. Static camera view, no zoom or pan."
   },
   {
-    "idx": 14,
+    "idx": 22,
     "image": "real_world_spatial_reasoning/3.jpg",
     "category": "real world spatial reasoning",
     "question": "From the dunker's viewpoint, which white-uniformed player is the farthest from them? options: [\"thirteen\", \"ten\", \"five\", \"twenty\"], answer: 2",
     "reasoning_prompt": "The image transitions to a depth-map of the scene: Darker colors represent pixels further from the camera, lighter colors represent pixels closer to the camera. The exact color map to use is provided on the right side of the image. Static scene, no pan, no zoom, no dolly."
   },
   {
-    "idx": 15,
+    "idx": 23,
     "image": "real_world_spatial_reasoning/4.jpg",
     "category": "real world spatial reasoning",
     "question": "Is it safe to have a 2-second gap with the vehicle in front of me?",
     "reasoning_prompt": "Continue driving, when there is a 2-second gap with the vehicle in front of me. The vehicle in front suddenly brakes. Static camera."
   },
   {
-    "idx": 16,
+    "idx": 24,
     "image": "real_world_spatial_reasoning/5.jpg",
     "category": "real world spatial reasoning",
     "question": "If you are facing the washing machine, how should you walk to the stove and face the stove? options: [\"Turn around and go straight, then turn right and go straight, then turn left and go straight, finally turn left to face the stove.\", \"Turn around and go straight, then turn right and go straight, then turn right and go straight, finally turn left to face the stove.\", \"Turn around and go straight, then turn left and go straight, then turn left and go straight, finally turn left to face the stove.\", \"Turn around and go straight, then turn left and go straight, then turn right and go straight, finally turn left to face the stove.\"], answer: 3",
     "reasoning_prompt": "The camera slowly and smoothly elevates from its current isometric view, gradually rising upwards while maintaining focus on the apartment layout. It continues to ascend until it reaches a complete overhead, bird's-eye perspective, providing a full top-down view of the entire floor plan, displaying all rooms and furniture clearly from above. The movement is fluid and controlled, ending with a static shot from the high vantage point."
   },
   {
-    "idx": 17,
+    "idx": 25,
+    "image": "real_world_spatial_reasoning/6.jpg",
+    "category": "real world spatial reasoning",
+    "reasoning_prompt": "The dog on the left, which is on a leash, tries to run to the path behind it.  Static camera, no zoom, no pan.",
+    "question": "If the dog on the left runs to the path behind them, is the leash long enough to allow it?"
+  },
+  {
+    "idx": 26,
+    "image": "real_world_spatial_reasoning/7.jpg",
+    "category": "real world spatial reasoning",
+    "reasoning_prompt": "View the cans from the perspective of the doll. Then draw an arrow points from the the blue can to the black can.",
+    "question": "The image depicts a doll sitting on the table along with three cans in different colors: blue, black, and orange. Please answer: from the doll's point of view, is the blue can on the left of the black can or right?"
+  },
+  {
+    "idx": 27,
+    "image": "real_world_spatial_reasoning/8.jpg",
+    "category": "real world spatial reasoning",
+    "reasoning_prompt": "The image transitions to a depth-map of the scene: Darker colors represent pixels further from the camera, lighter colors represent pixels closer to the camera. The exact color map to use is provided on the right side of the image. Static scene, no pan, no zoom, no dolly.",
+    "question": "Who is farthest from the girl in the green short-sleeved shirt?"
+  },
+  {
+    "idx": 28,
+    "image": "real_world_spatial_reasoning/9.jpg",
+    "category": "real world spatial reasoning",
+    "reasoning_prompt": "An arrow points from the woman to the man. Static camera view, no zoom or pan.",
+    "question": "From this man's perspective, which direction is the woman?"
+  },
+  {
+    "idx": 29,
+    "image": "real_world_spatial_reasoning/10.jpg",
+    "category": "real world spatial reasoning",
+    "question": "From the photographer's perspective, where are the prepared dishes on the food delivery robot?",
+    "reasoning_prompt": "View the scene from the photographer's current position, keeping the camera fixed, and clearly show the prepared dishes resting on the top tray of the food-delivery robot."
+  },
+  {
+    "idx": 30,
     "image": "3D_geometry_reasoning/1.jpg",
     "category": "3D geometry reasoning",
     "question": "Check out a net with 6 faces below: <image> Can the net be folded to form a cube, yes or no? A. no B. yes.",
     "reasoning_prompt": "The net is folded to form a single cube, with folding edges clearly shown. Static camera perspective, no zoom or pan."
   },
   {
-    "idx": 18,
+    "idx": 31,
     "image": "3D_geometry_reasoning/2.jpg",
     "category": "3D geometry reasoning",
     "question": "Move the object up. After the transformation, which of the following shapes best represents the final result? For reference, the black dots in the center of each panel of the figures indicate the origin.",
     "reasoning_prompt": "Move the object up. Static camera view, no zoom or pan, and the perspective of the object remains unchanged throughout."
   },
   {
-    "idx": 19,
+    "idx": 32,
     "image": "3D_geometry_reasoning/3.jpg",
     "category": "3D geometry reasoning",
     "question": "Move the object to the left along the y-axis and up. After the transformation, which of the following shapes best represents the final result? For reference, the black dots in the center of each panel of the figures indicate the origin.",
     "reasoning_prompt": "A hand moves the object to the left along the y-axis and then moves it up. Static camera view, no zoom or pan, and the perspective of the object remains unchanged throughout."
   },
   {
-    "idx": 20,
+    "idx": 33,
     "image": "3D_geometry_reasoning/4.jpg",
     "category": "3D geometry reasoning",
     "question": "\"The top row of images shows different views of the initial state of a cube stack, while the bottom row shows different views of the final state after transformation. During the transformation process, blocks can move one unit in any direction (forward, backward, left, right, up, down). If the target position is empty, the block can move there directly; if the target position already has a block, they swap places. Blocks cannot float in the air. If a block is moved away from a position, any block above it will fall down until reaching a supporting surface. The xyz axes are shown in the diagram, and each block's position can be precisely identified using coordinates (x1,y1,z1). Which of the following transformation sequences can change the cube stack from the initial state to the final state shown in the diagram? Please answer from options A, B, C, or D.\", \"Choices\":[ \"(1, 0, 0) y+ -- (1, 1, 0) y- -- (2, 1, 0) y+\", \"(1, 0, 0) y+ -- (2, 1, 0) y+ -- (2, 0, 0) y+\", \"(2, 2, 0) x- -- (2, 0, 0) x-\", \"(1, 0, 0) x- -- (2, 0, 0) y+ -- (2, 2, 0) y-\" ],",
     "reasoning_prompt": "Smoothly zoom in to the \"Initial State\" figure. The yellow block, starting at (1, 0, 0), moves one unit in the positive Y direction to position (1, 1, 0). Then, move back to (1, 0, 0). The cyan block, starting at (2, 0, 0), moves one unit in the positive Y direction to position (2, 1, 0), exchange the position with the purple block. Static shot. No pan. No glitches, noise, or artifacts."
   },
   {
-    "idx": 21,
+    "idx": 34,
     "image": "3D_geometry_reasoning/5.jpg",
     "category": "3D geometry reasoning",
     "question": "The left image shows the net (unfolded pattern) of a cube, with six faces colored in different colors. The net is folded upward to form a cube. From an axonometric (3D) viewing angle of the cube, which combination of adjacent colors is possible to see? Please answer from options A, B, C, or D.",
     "reasoning_prompt": "The net is folded upward to form one cube. The camera stays static, with no zoom or pan."
   },
   {
-    "idx": 22,
+    "idx": 35,
+    "image": "3D_geometry_reasoning/6.jpg",
+    "category": "3D geometry reasoning",
+    "reasoning_prompt": "The object on the left rotates a full 360 degrees around its vertical axis, then stops at its original orientation. Static camera, no zoom or pan.",
+    "question": "The graph in question can be rotated to get the graph corresponding to which option?"
+  },
+  {
+    "idx": 36,
+    "image": "3D_geometry_reasoning/7.jpg",
+    "category": "3D geometry reasoning",
+    "reasoning_prompt": "The net is folded to form a single cube, with folding edges clearly shown. Static camera perspective, no zoom or pan.",
+    "question": "Check out a net with 6 faces below: <image> Can the net be folded to form a cube, yes or no? A. no B. yes"
+  },
+  {
+    "idx": 37,
+    "image": "3D_geometry_reasoning/8.jpg",
+    "category": "3D geometry reasoning",
+    "reasoning_prompt": "Begin with a static full view showing both the three-dimensional shape on the left and all four two-dimensional projections on the right. Hold for one to two seconds. Then, perform a slow, consistent zoom toward the 3D shape, rotating slightly around it to suggest spatial structure, keeping lighting and geometry fixed. Hold on this centered view for one second. Next, pan smoothly rightward across options A, B, C, and D in order, centering each one for about 0.8 seconds at a fixed scale. Maintain identical framing, speed, and exposure for each option. Do not add highlights, outlines, or depth effects. Avoid any hints toward the correct answer. Finally, zoom back out to show the full comparison layout and hold for one to two seconds.",
+    "question": "From any angle, which one on the right is not a view of the threedimensional shape given on the left?"
+  },
+  {
+    "idx": 38,
+    "image": "3D_geometry_reasoning/9.jpg",
+    "category": "3D geometry reasoning",
+    "reasoning_prompt": "Continue cutting the left object like this, then show the section. Static camera perspective, no zoom or pan.",
+    "question": "Cutting like this, what will the shape of the section be?"
+  },
+  {
+    "idx": 39,
+    "image": "3D_geometry_reasoning/10.jpg",
+    "category": "3D geometry reasoning",
+    "question": "Given the outer surface of the carton on the left, which of the following can be folded from it?",
+    "reasoning_prompt": "Fold the net upward into a cube, keeping the camera fixed, and show the faces meeting and aligning to verify which option matches the final folded shape."
+  },
+  {
+    "idx": 40,
     "image": "2D_geometry_reasoning/1.jpg",
     "category": "2D geometry reasoning",
     "question": "In the figure shown, let 'n' represent the length of side AB of the inscribed rectangle ABCD, where n is an undetermined value. With BC equal to 6.0 and the diameter of circle O equal to 10.0, what is the value of n?",
     "reasoning_prompt": "A line connecting point A and point C. The video ends once the connection process is complete. Static view, no zoom or pan."
   },
   {
-    "idx": 23,
+    "idx": 41,
     "image": "2D_geometry_reasoning/2.jpg",
     "category": "2D geometry reasoning",
     "question": "The figure presented depicts a square designated as ABCD. Within this square, point M is identified as the midpoint of the side AB, while point N is the midpoint of the opposing side CD. Additionally, point O is located at the midpoint of segment CN. Your task is to draw the segment MO. It is given that the length of segment AM is represented by t. The objective is to determine which of the following expressions accurately represents the length of the segment MO in terms of t.",
     "reasoning_prompt": "Smoothly connecting point M and point N. The video ends once the connection process is complete. Static view, no zoom or pan."
   },
   {
-    "idx": 24,
+    "idx": 42,
     "image": "2D_geometry_reasoning/3.jpg",
     "category": "2D geometry reasoning",
     "question": "AB equals to 8.0. What would the area of the entire shape ABCD be?",
     "reasoning_prompt": "Smoothly connecting point C and point D with a line. The video ends once the connection process is complete. Static view, no zoom or pan."
   },
   {
-    "idx": 25,
+    "idx": 43,
     "image": "2D_geometry_reasoning/4.jpg",
     "category": "2D geometry reasoning",
     "question": "Connect the black dots in the image sequentially with straight lines according to the edge numbers (i.e., connect dot 1 to dot 2, dot 2 to dot 3, and so on). The final result will form a simple line drawing. What does this drawing represent?",
     "reasoning_prompt": "Animate the dots connecting sequentially from 1 to 25, each straight line appearing smoothly until the full outline emerges. Keep the background with the smiling sun and plants unchanged. Static shot."
   },
   {
-    "idx": 26,
+    "idx": 44,
     "image": "2D_geometry_reasoning/5.jpg",
     "category": "2D geometry reasoning",
     "question": "Connect the black dots in the image sequentially with straight lines according to the edge numbers (i.e., connect dot 1 to dot 2, dot 2 to dot 3, and so on). The final result will form a simple line drawing. What does this drawing represent?",
     "reasoning_prompt": "Animate the numbered dots connecting sequentially from 1 to 118, each straight line appearing smoothly as the outline gradually emerges. Keep all numbers and dots visible while the connecting lines form step by step. Static shot."
   },
   {
-    "idx": 27,
+    "idx": 45,
     "image": "2D_geometry_reasoning/6.jpg",
     "category": "2D geometry reasoning",
     "question": "Connect the black dots in the image sequentially with straight lines according to the edge numbers (i.e., connect dot 1 to dot 2, dot 2 to dot 3, and so on). The final result will form a simple line drawing. What does this drawing represent?",
     "reasoning_prompt": "Animate the numbered dots connecting sequentially from 1 to 66, each straight line appearing smoothly as the outline gradually emerges. Keep all numbers and dots visible while the connecting lines form step by step. Static shot."
   },
   {
-    "idx": 28,
+    "idx": 46,
     "image": "2D_geometry_reasoning/7.jpg",
     "category": "2D geometry reasoning",
-    "question": "Check out an Tangram puzzle below. The left panel is an empty Tangram puzzle, while the right panel shows available pieces to complete the puzzle. Keep in mind that you can rotate or flip the pieces. Can the Tangram puzzle be completed with the available pieces, yes or no? ",
+    "question": "Check out an Tangram puzzle below. The left panel is an empty Tangram puzzle, while the right panel shows available pieces to complete the puzzle. Keep in mind that you can rotate or flip the pieces. Can the Tangram puzzle be completed with the available pieces, yes or no?",
     "reasoning_prompt": "Place piece A with its upper-left corner at (x, y) = (0, 3)."
   },
   {
-    "idx": 29,
+    "idx": 47,
     "image": "2D_geometry_reasoning/8.jpg",
     "category": "2D geometry reasoning",
     "question": "Is the top yellow line shorter than the bottom yellow line?",
     "reasoning_prompt": "Pan vertically at a steady speed to center the top yellow line, then the bottom one, keeping both visible with identical scale and exposure. Ensure all elements stay unchanged and finish with a full view showing both lines together."
   },
   {
-    "idx": 30,
+    "idx": 48,
+    "image": "2D_geometry_reasoning/9.jpg",
+    "category": "2D geometry reasoning",
+    "reasoning_prompt": "Draw a circle with diameter AB, and center O. Static view, no zoom or pan.",
+    "question": "Consider right-angled triangle ABC, where the length of side AB is denoted as 'p' units (p = 6.0), side BC is denoted as 'q' units (q = 4.0), and a point P moves within the triangle with the condition that angle PAB equals angle PBC. Determine the minimum length of the line segment CP within the triangle and express it as 'y'.\\nChoices:\\nA: \\\\frac{3}{2}\\nB: 2\\nC: \\\\frac{8\u221a{13}}{13}\\nD: \\\\frac{12\u221a{13}}{13}"
+  },
+  {
+    "idx": 49,
+    "image": "2D_geometry_reasoning/10.jpg",
+    "category": "2D geometry reasoning",
+    "question": "Is the top yellow line shorter than the bottom yellow line?",
+    "reasoning_prompt": "Single continuous take with no cuts or effects. Show a static full view of the image for one to two seconds so the two yellow lines and the rails are visible together. Pan vertically at a constant speed with no zoom. Center the top yellow line and hold for one second. Continue at the same speed to center the bottom yellow line and hold for one second. Keep identical scale, framing, and exposure for both shots. The scene is rigid and static; only the camera moves. Do not change objects, lengths, colors, lighting, or geometry. Do not inpaint, warp, or re-render. Finish with a full view showing both yellow lines at once and hold for one second."
+  },
+  {
+    "idx": 50,
     "image": "physics_based_reasoning/1.jpg",
     "category": "physics based reasoning",
     "question": "The figure shows a rough semicircular track whose ends are at a vertical height h. A block placed at point P at one end of the track is released from rest and slides past the bottom of the track. Which of the following is true of the height to which the block rises on the other side of the track?",
     "reasoning_prompt": "Show the rough semicircular track with height label h and a block at P; release it, add faint friction streaks as it slides down and up the right side, stopping below the rim. Show the move quickly and completely. Static shot."
   },
   {
-    "idx": 31,
+    "idx": 51,
     "image": "physics_based_reasoning/2.jpg",
     "category": "physics based reasoning",
     "question": "Think about the magnetic force between the magnets in each pair. Which of the following statements is true?",
     "reasoning_prompt": "Dynamically depict the attraction between magnets, paying attention to speed and intensity. Static shot."
   },
   {
-    "idx": 32,
+    "idx": 52,
     "image": "physics_based_reasoning/3.jpg",
     "category": "physics based reasoning",
-    "question": "The red ball moves in the direction indicated by the blue arrow and bounces off the black side walls upon collision; the component of its velocity perpendicular to the wall reverses in direction but maintains its magnitude, while the component parallel to the wall remains unchanged. Based on this behavior, please estimate which numbered brick (from 1 to 10) at the top the red ball will hit first. ",
+    "question": "The red ball moves in the direction indicated by the blue arrow and bounces off the black side walls upon collision; the component of its velocity perpendicular to the wall reverses in direction but maintains its magnitude, while the component parallel to the wall remains unchanged. Based on this behavior, please estimate which numbered brick (from 1 to 10) at the top the red ball will hit first.",
     "reasoning_prompt": "Animate the red ball moving along the blue arrow's direction, bouncing off the left black walls according to reflection rules, keeping speed consistent. Continue its path upward until it reaches and collides with one of the numbered top bricks. Static shot."
   },
   {
-    "idx": 33,
+    "idx": 53,
     "image": "physics_based_reasoning/4.jpg",
     "category": "physics based reasoning",
-    "question": "The red ball moves in the direction indicated by the blue arrow and bounces off the black side walls upon collision; the component of its velocity perpendicular to the wall reverses in direction but maintains its magnitude, while the component parallel to the wall remains unchanged. Based on this behavior, please estimate which numbered brick (from 1 to 10) at the top the red ball will hit first. ",
+    "question": "The red ball moves in the direction indicated by the blue arrow and bounces off the black side walls upon collision; the component of its velocity perpendicular to the wall reverses in direction but maintains its magnitude, while the component parallel to the wall remains unchanged. Based on this behavior, please estimate which numbered brick (from 1 to 10) at the top the red ball will hit first.",
     "reasoning_prompt": "Animate the red ball moving along the blue arrow's direction, bouncing off the left black walls according to reflection rules, keeping speed consistent. Continue its path upward until it reaches and collides with one of the numbered top bricks. Static shot."
   },
   {
-    "idx": 34,
+    "idx": 54,
     "image": "physics_based_reasoning/5.jpg",
     "category": "physics based reasoning",
     "question": "The orange gear is fixed on the stationary green gear. If the orange gear rotates counterclockwise in the given view, what is the motion of the yellow gear relative to the orange gear?",
     "reasoning_prompt": "The orange gear rotates counterclockwise in the given view. Animate the provided planetary gear system. The orange gear is fixed on the green gear. The central orange sun gear rotates counterclockwise, driving the yellow planet gear. All components must maintain their relative axial positions and proper gear meshing. The camera is static, with no zoom or pan."
   },
   {
-    "idx": 35,
+    "idx": 55,
     "image": "physics_based_reasoning/6.jpg",
     "category": "physics based reasoning",
     "question": "In the coaxial system shown, the orange gear is fixed, and the yellow and green gears are identical in shape. If the yellow gear rotates counterclockwise, what is the motion of the green gear relative to the orange gear?",
     "reasoning_prompt": "Smoothly zoom out. The orange gear remains fixed in place. The yellow gear rotates counterclockwise, driving the green gear. The camera stays static, with no zoom or pan."
   },
   {
-    "idx": 36,
+    "idx": 56,
+    "image": "physics_based_reasoning/7.jpg",
+    "category": "physics based reasoning",
+    "reasoning_prompt": "The upper string breaks. Then, show the trajectory of both objects. Ensure the motion is physically accurate. Static shot.",
+    "question": "If the upper string breaks, will both objects fall at the same time?"
+  },
+  {
+    "idx": 57,
+    "image": "physics_based_reasoning/8.jpg",
+    "category": "physics based reasoning",
+    "reasoning_prompt": "Release the ball and show the track of it, which slides down and up along the wall. Show the move completely. Ensure the motion is physically accurate. Static shot.",
+    "question": "As shown in the picture, can the ball reach the highest point on the right after it is released?"
+  },
+  {
+    "idx": 58,
+    "image": "physics_based_reasoning/9.jpg",
+    "category": "physics based reasoning",
+    "question": "Two blocks of mass m and M are hanging off a single pulley, as shown. Determine the acceleration of the blocks. Ignore the mass of the pulley.",
+    "reasoning_prompt": "Release both blocks and let them move freely under gravity. Animate the motion as the heavier mass descends and the lighter rises, keeping tension and acceleration physically accurate. Static camera."
+  },
+  {
+    "idx": 59,
+    "image": "physics_based_reasoning/10.jpg",
+    "category": "physics based reasoning",
+    "question": "Two objects collide elastically on a frictionless horizontal surface. Object A has a mass of 8kg and moves to the right at 6m/s. Object B has a mass of 4kg and moves to the left at 9m/s. After the collision, determine the velocity of each object (magnitude and direction).",
+    "reasoning_prompt": "Let both objects move toward each other at their given speeds on a frictionless surface and collide elastically. Show the full motion and update their velocities instantly at impact according to conservation of momentum and energy, then let them separate with their resulting speeds."
+  },
+  {
+    "idx": 60,
     "image": "rotation_reasoning/1.jpg",
     "category": "rotation reasoning",
     "question": "Is the frontmost skier wearing a scarf?",
     "reasoning_prompt": "Rotate the scene 45 degrees clockwise. Then draw bounding boxes around the frontmost skiing character."
   },
   {
-    "idx": 37,
+    "idx": 61,
     "image": "rotation_reasoning/2.jpg",
     "category": "rotation reasoning",
     "question": "Looking up from the floor, how many rows of drinks are in the leftmost vending machine?",
     "reasoning_prompt": "Rotate the scene 180 degrees clockwise. Then draw a bounding box around the leftmost vending machine."
   },
   {
-    "idx": 38,
+    "idx": 62,
     "image": "rotation_reasoning/3.jpg",
     "category": "rotation reasoning",
     "question": "On which floors are the 'IKEA' labels located?",
     "reasoning_prompt": "Rotate the video frame 90 degrees counterclockwise in the 2D plane, then draw bounding boxes around each 'IKEA' label."
   },
   {
-    "idx": 39,
+    "idx": 63,
     "image": "rotation_reasoning/4.jpg",
     "category": "rotation reasoning",
     "question": "Which grid can be obtained by rotating the grid only?",
     "reasoning_prompt": "The entire 'Original' grid figure performs one smooth, continuous 360-degree rotation clockwise within its own 2D plane. The camera stays static, with no pan."
   },
   {
-    "idx": 40,
+    "idx": 64,
+    "image": "rotation_reasoning/5.jpg",
+    "category": "rotation reasoning",
+    "reasoning_prompt": "Rotate the video frame 90 degrees clockwise in the 2D plane, then draw bounding boxes around each white fox.",
+    "question": "How many white foxes are there in the image?"
+  },
+  {
+    "idx": 65,
+    "image": "rotation_reasoning/6.jpg",
+    "category": "rotation reasoning",
+    "reasoning_prompt": "Rotate the video frame 45 degrees counterclockwise in the 2D plane, then draw bounding boxes around each lions.",
+    "question": "How many lions are there in the image?"
+  },
+  {
+    "idx": 66,
+    "image": "rotation_reasoning/7.jpg",
+    "category": "rotation reasoning",
+    "reasoning_prompt": "The entire 'Original' grid figure performs one smooth, continuous 360-degree rotation clockwise within its own 2D plane. The camera stays static, with no pan.",
+    "question": "The left image shows a colored grid with a red square marking one corner. Which grid can be obtained by rotating the left grid only, without flipping or other changes?"
+  },
+  {
+    "idx": 67,
+    "image": "rotation_reasoning/8.jpg",
+    "category": "rotation reasoning",
+    "reasoning_prompt": "The entire 'Original' grid figure performs one smooth, continuous 360-degree rotation clockwise within its own 2D plane. The camera stays static, with no pan.",
+    "question": "The left image shows a colored grid with a red square marking one corner. Which grid can be obtained by rotating the left grid only, without flipping or other changes?"
+  },
+  {
+    "idx": 68,
+    "image": "rotation_reasoning/9.jpg",
+    "category": "rotation reasoning",
+    "question": "The left image shows the original cube stack made of equal-sized small cubes. Which of the options on the right cannot be obtained by rotating the original cube stack? Please answer from options A, B, C, or D.",
+    "reasoning_prompt": "The cube stack on the left rotates smoothly 360\u00b0 in place around a vertical axis. The camera remains fixed, with no pan or zoom."
+  },
+  {
+    "idx": 69,
+    "image": "rotation_reasoning/10.jpg",
+    "category": "rotation reasoning",
+    "question": "The left image shows a colored grid with a red square marking one corner. Which grid can be obtained by rotating the left grid only, without flipping or other changes? Please answer from options A, B, C, or D.",
+    "reasoning_prompt": "The entire original grid rotates smoothly 360\u00b0 in its 2D plane, keeping all colors and the marked corner fixed relative to the grid. The camera stays still with no pan, zoom, or flips."
+  },
+  {
+    "idx": 70,
     "image": "table_and_chart_reasoning/1.jpg",
     "category": "table and chart reasoning",
     "question": "In the year 2014, which opinion is dominant?",
     "reasoning_prompt": "Start with a static, full view of the chart. Then, smoothly zoom the camera in to focus on the vertical area corresponding to the year 2014. The chart itself, including all its data, lines, and labels, must remain completely static and unchanged throughout the video."
   },
   {
-    "idx": 41,
+    "idx": 71,
     "image": "table_and_chart_reasoning/2.jpg",
     "category": "table and chart reasoning",
     "question": "What is the sum of footwear manufacturing establishments in Nova Scotia and Mantioba as of December 2020?",
     "reasoning_prompt": "Start with smoothly zooming in to focus on the 'Nova Scotia' row. Then, smoothly zoom out to the full view of the chart. End with smoothly zooming in to focus on the 'Manitoba' row. The chart itself, including all its data, lines, and labels, must remain completely static and unchanged throughout the video."
   },
   {
-    "idx": 42,
+    "idx": 72,
     "image": "table_and_chart_reasoning/3.jpg",
     "category": "table and chart reasoning",
     "question": "What' the color of smallest section in the chart?",
     "reasoning_prompt": "Zoom in to focus on the smallest section in the chart. The chart itself, including all its data, lines, and labels, must remain completely static and unchanged throughout the video."
   },
   {
-    "idx": 43,
+    "idx": 73,
     "image": "table_and_chart_reasoning/4.jpg",
     "category": "table and chart reasoning",
     "question": "What is the end market for the Engineered Systems segment?",
     "reasoning_prompt": "Draw a bounding box around the end market for the Engineered Systems segment. The table itself, including all its text, lines, and labels, must remain completely static and unchanged throughout the video."
   },
   {
-    "idx": 44,
+    "idx": 74,
+    "image": "table_and_chart_reasoning/5.jpg",
+    "category": "table and chart reasoning",
+    "reasoning_prompt": "Start with smoothly zooming in to focus on the smallest segment in the chart. Then, smoothly zoom out to the full view of the chart. End with smoothly zooming in to focus on the second smallest segment. The chart itself, including all its data and labels, must remain completely static and unchanged throughout the video.",
+    "question": "What's the product of smallest segment and second smallest segment?"
+  },
+  {
+    "idx": 75,
+    "image": "table_and_chart_reasoning/6.jpg",
+    "category": "table and chart reasoning",
+    "reasoning_prompt": "Zoom in to focus on the highest revenue from the Asia-Pacific region. The chart itself, including all its data, lines, and labels, must remain completely static and unchanged throughout the video.",
+    "question": "In which year was the revenue from the Asia-Pacific region the highest"
+  },
+  {
+    "idx": 76,
+    "image": "table_and_chart_reasoning/7.jpg",
+    "category": "table and chart reasoning",
+    "reasoning_prompt": "Draw a bounding box around the total number in 2010. The table itself, including all its text, lines, and labels, must remain completely static and unchanged throughout the video.",
+    "question": "What was the total in 2010?"
+  },
+  {
+    "idx": 77,
+    "image": "table_and_chart_reasoning/8.jpg",
+    "category": "table and chart reasoning",
+    "reasoning_prompt": "Draw a bounding box around the net value of the core technology on December 31, 2006. The table itself, including all its text, lines, and labels, must remain completely static and unchanged throughout the video.",
+    "question": "What was the net value of the core technology on December 31, 2006?"
+  },
+  {
+    "idx": 78,
+    "image": "table_and_chart_reasoning/9.jpg",
+    "category": "table and chart reasoning",
+    "reasoning_prompt": "Draw a bounding box around the total cost of revenues in 2002. The table itself, including all its text, lines, and labels, must remain completely static and unchanged throughout the video.",
+    "question": "What was the total cost of revenues in 2002?"
+  },
+  {
+    "idx": 79,
+    "image": "table_and_chart_reasoning/10.jpg",
+    "category": "table and chart reasoning",
+    "reasoning_prompt": "Draw a bounding box around the value of Stryker Corporation in 2008. The table itself, including all its text, lines, and labels, must remain completely static and unchanged throughout the video.",
+    "question": "What was the value of Stryker Corporation in 2008?"
+  },
+  {
+    "idx": 80,
     "image": "object_counting_reasoning/1.jpg",
     "category": "object counting reasoning",
     "question": "How many unit squares does the line segment pass through in the given grid diagram?",
     "reasoning_prompt": "A scanner dot moves along the black line from bottom-left to top-right. As soon as this dot enters a new grid square, that entire square is instantly filled with yellow color and stays yellow. A square only turns yellow if the scanner dot on the line has entered it. Static camera, no zoom."
   },
   {
-    "idx": 45,
+    "idx": 81,
     "image": "object_counting_reasoning/2.jpg",
     "category": "object counting reasoning",
     "question": "How many rectangles are there in the figure?",
     "reasoning_prompt": "Highlight only the rectangles in the figure with a bright yellow color. Not highlight any other shapes like squares, triangles, circles, or irregular polygons. Static camera, no zoom, no pan."
   },
   {
-    "idx": 46,
+    "idx": 82,
     "image": "object_counting_reasoning/3.jpg",
     "category": "object counting reasoning",
     "question": "How many rectangles are there in the figure?",
     "reasoning_prompt": "Label all the fish with increasing numbers (1, 2, 3, ...). The fish keep static. Static camera, no zoom, no pan."
   },
   {
-    "idx": 47,
+    "idx": 83,
     "image": "object_counting_reasoning/4.jpg",
     "category": "object counting reasoning",
     "question": "How many tiny things have the same material as the green motorbike?",
     "reasoning_prompt": "Draw bounding boxes around the tiny things that have the same material as the green motorbike. Static shot."
   },
   {
-    "idx": 48,
+    "idx": 84,
     "image": "object_counting_reasoning/5.jpg",
     "category": "object counting reasoning",
     "question": "There is a small yellow object that is to the left of the tiny metal motorbike; how many brown metal mountain bikes are to the right of it?",
     "reasoning_prompt": "Draw bounding boxes around the brown metal mountain bikes to the right of the origami crane. Static shot."
   },
   {
-    "idx": 49,
+    "idx": 85,
     "image": "object_counting_reasoning/6.jpg",
     "category": "object counting reasoning",
     "question": "How many cyan things are matte tandem bikes or metal cruisers?",
     "reasoning_prompt": "Draw bounding boxes around any matte tandem bikes and metal cruisers present in the scene. Static shot."
   },
   {
-    "idx": 50,
+    "idx": 86,
+    "image": "object_counting_reasoning/7.jpg",
+    "category": "object counting reasoning",
+    "reasoning_prompt": "Take each book from the stack and neatly place them side-by-side on a flat surface, clearly showing all individual books. Ensure each book is visible and distinct.",
+    "question": "How many books are there?"
+  },
+  {
+    "idx": 87,
+    "image": "object_counting_reasoning/8.jpg",
+    "category": "object counting reasoning",
+    "reasoning_prompt": "Untangle and neatly lay out all the strings from the image, showing them clearly as separate entities. Static shot.",
+    "question": "How many strings are there in the scene?"
+  },
+  {
+    "idx": 88,
+    "image": "object_counting_reasoning/9.jpg",
+    "category": "object counting reasoning",
+    "question": "How many burners are on the stove?",
+    "reasoning_prompt": "Start with a static full view of the stove for one to two seconds. Then smoothly zoom the camera downward while keeping a constant speed and scale. Center the first burner in the top left, hold for about 0.8 seconds, then move to the top right burner, then the bottom left, and finally the bottom right, giving the same time to each. Keep all transitions smooth and continuous. Maintain consistent brightness, color, and geometry throughout the video. Do not change any visual elements, add text, or apply effects. After all four burners are shown, zoom back out to show the entire stove again and hold for one to two seconds.2"
+  },
+  {
+    "idx": 89,
+    "image": "object_counting_reasoning/10.jpg",
+    "category": "object counting reasoning",
+    "reasoning_prompt": "Label all the birds with increasing numbers (1, 2, 3, ...). The birds keep static. Static camera, no zoom, no pan.",
+    "question": "How many birds are there in the picture?"
+  },
+  {
+    "idx": 90,
     "image": "gui_reasoning/1.jpg",
     "category": "gui reasoning",
     "question": "Collapse the pkgs folder.",
     "reasoning_prompt": "Click the pkgs folder to collapse it. Static shot."
   },
   {
-    "idx": 51,
+    "idx": 91,
     "image": "gui_reasoning/2.jpg",
     "category": "gui reasoning",
     "question": "A calendar icon located to the right of the flight date options, next to the price display for June 6",
     "reasoning_prompt": "Click the calendar icon located to the right of the flight date options, next to the price display for June 6. Static shot."
   },
   {
-    "idx": 52,
+    "idx": 92,
     "image": "gui_reasoning/3.jpg",
     "category": "gui reasoning",
     "question": "A navigation arrow located at the right edge of the browse by category carousel.",
     "reasoning_prompt": "Click the navigation arrow located at the right edge of the browse by category carousel. Static shot."
   },
   {
-    "idx": 53,
+    "idx": 93,
+    "image": "gui_reasoning/4.jpg",
+    "category": "gui reasoning",
+    "reasoning_prompt": "Click the button to operate all the devices. Static shot.",
+    "question": "I want to see how to operate all the devices. What should I do?"
+  },
+  {
+    "idx": 94,
+    "image": "gui_reasoning/5.jpg",
+    "category": "gui reasoning",
+    "reasoning_prompt": "Click the green checkbox next to the 'Keep' label in the sidebar of the Calendar app. Static shot.",
+    "question": "A green checkbox next to the 'Keep' label in the sidebar of the Calendar app"
+  },
+  {
+    "idx": 95,
+    "image": "gui_reasoning/6.jpg",
+    "category": "gui reasoning",
+    "reasoning_prompt": "Click the clickable element displaying the follower count next to the 'Following' count in the user profile section. Static shot.",
+    "question": "A clickable element displaying the follower count next to the 'Following' count in the user profile section,"
+  },
+  {
+    "idx": 96,
+    "image": "gui_reasoning/7.jpg",
+    "category": "gui reasoning",
+    "reasoning_prompt": "Click the downward arrow button allows you to scroll down through the list of years. Static shot.",
+    "question": "The downward arrow button allows you to scroll down through the list of years."
+  },
+  {
+    "idx": 97,
+    "image": "gui_reasoning/8.jpg",
+    "category": "gui reasoning",
+    "reasoning_prompt": "Click the button to create a new list in word. Static shot.",
+    "question": "create a new list in word"
+  },
+  {
+    "idx": 98,
+    "image": "gui_reasoning/9.jpg",
+    "category": "gui reasoning",
+    "reasoning_prompt": "Click the button to change the font color to yellow in the PPT. Static shot.",
+    "question": "Change the font color to yellow"
+  },
+  {
+    "idx": 99,
+    "image": "gui_reasoning/10.jpg",
+    "category": "gui reasoning",
+    "reasoning_prompt": "Click the button of single-ended arrow. Static shot.",
+    "question": "single-ended arrow"
+  },
+  {
+    "idx": 100,
     "image": "embodied_reasoning/1.jpg",
     "category": "embodied reasoning",
     "question": "Which set of 4 points is a right trajectory when doing place a cucumber into a pot?",
-    "reasoning_prompt": "Keep the cucumber’s start and the pot opening in view. Sweep once from start to pot at fixed scale and speed, briefly dwelling at four evenly spaced waypoints (p1→p4) along the path, then hold on both endpoints."
+    "reasoning_prompt": "Keep the cucumber's start and the pot opening in view. Sweep once from start to pot at fixed scale and speed, briefly dwelling at four evenly spaced waypoints (p1\u2192p4) along the path, then hold on both endpoints."
   },
   {
-    "idx": 54,
+    "idx": 101,
     "image": "embodied_reasoning/2.jpg",
     "category": "embodied reasoning",
     "question": "Which point corresponds to the affordance for manipulating the banana?",
-    "reasoning_prompt": "Keep the cucumber’s start and the pot opening in view. Sweep once from start to pot at fixed scale and speed, briefly dwelling at four evenly spaced waypoints (p1→p4) along the path, then hold on both endpoints."
+    "reasoning_prompt": "Keep the cucumber's start and the pot opening in view. Sweep once from start to pot at fixed scale and speed, briefly dwelling at four evenly spaced waypoints (p1\u2192p4) along the path, then hold on both endpoints."
   },
   {
-    "idx": 55,
+    "idx": 102,
     "image": "embodied_reasoning/3.jpg",
     "category": "embodied reasoning",
     "question": "Is the container sealed?",
-    "reasoning_prompt": "Pan smoothly to include both the lid–body interface and the spout or cap in view at a fixed scale, keeping exposure steady and avoiding any visual or geometric changes."
+    "reasoning_prompt": "Pan smoothly to include both the lid\u2013body interface and the spout or cap in view at a fixed scale, keeping exposure steady and avoiding any visual or geometric changes."
   },
   {
-    "idx": 56,
+    "idx": 103,
+    "image": "embodied_reasoning/4.jpg",
+    "category": "embodied reasoning",
+    "question": "What's the correct trajectory to pick up the ice cream?",
+    "reasoning_prompt": "Single continuous take with no cuts. Begin with a static full-frame shot (1\u20132 s). Then animate the robot arm executing a smooth, continuous motion to pick up the ice cream. Only the robot arm should move; the scene remains rigid and unchanged, with no appearance or geometric variations."
+  },
+  {
+    "idx": 104,
+    "image": "embodied_reasoning/5.jpg",
+    "category": "embodied reasoning",
+    "question": "What's the correct trajectory to open the most left trash can?",
+    "reasoning_prompt": "Single continuous take with no cuts. Begin with a static full-frame shot (1\u20132 s). Then animate the robot arm performing a smooth, constant-speed motion to open the leftmost trash can. Only the robot arm should move; the scene is rigid and static with no appearance or geometric changes throughout the shot."
+  },
+  {
+    "idx": 105,
+    "image": "embodied_reasoning/6.jpg",
+    "category": "embodied reasoning",
+    "question": "What's the correct trajectory to pick up the green socks?",
+    "reasoning_prompt": "Single continuous take with no cuts. Begin with a static full-frame shot (1\u20132 s). Then animate the robot arm performing a smooth, constant-speed motion to pick up the green sockes. Only the robot arm should move; the scene is rigid and static with no appearance or geometric changes throughout the shot."
+  },
+  {
+    "idx": 106,
+    "image": "embodied_reasoning/7.jpg",
+    "category": "embodied reasoning",
+    "question": "What's the correct trajectory to place the spoon to the right side of the table?",
+    "reasoning_prompt": "Single continuous take with no cuts. Begin with a static full-frame shot (1\u20132 s). Then animate the robot arm performing a smooth, constant-speed motion to place the spoon to the right side of the table. Only the robot arm should move; the scene is rigid and static with no appearance or geometric changes throughout the shot."
+  },
+  {
+    "idx": 107,
+    "image": "embodied_reasoning/8.jpg",
+    "category": "embodied reasoning",
+    "question": "What's the correct trajectory to place the spoon to pick up the upperleft white cup?",
+    "reasoning_prompt": "Single continuous take with no cuts. Begin with a static full-frame shot (1\u20132 s). Then animate the robot arm performing a smooth, constant-speed motion to pick up the upperleft white cup. Only the robot arm should move; the scene is rigid and static with no appearance or geometric changes throughout the shot."
+  },
+  {
+    "idx": 108,
+    "image": "embodied_reasoning/9.jpg",
+    "category": "embodied reasoning",
+    "question": "What's the correct trajectory to wipe the beans on the table from left to right.",
+    "reasoning_prompt": "Single continuous take with no cuts. Begin with a static full-frame shot (1\u20132 s). Then animate the robot arm performing a smooth, constant-speed motion to wipe the beans on the table from left to right. Only the robot arm should move; the scene is rigid and static with no appearance or geometric changes throughout the shot."
+  },
+  {
+    "idx": 109,
+    "image": "embodied_reasoning/10.jpg",
+    "category": "embodied reasoning",
+    "question": "What's the correct trajectory to pick up the eggplant.",
+    "reasoning_prompt": "Single continuous take with no cuts. Begin with a static full-frame shot (1\u20132 s). Then animate the robot arm performing a smooth, constant-speed motion to pick up the eggplant. Only the robot arm should move; the scene is rigid and static with no appearance or geometric changes throughout the shot."
+  },
+  {
+    "idx": 110,
     "image": "medical_reasoning/1.jpg",
     "category": "medical reasoning",
     "question": "Which lobe contains the pulmonary nodule?",
     "reasoning_prompt": "Show the full axial CT, then pan and zoom smoothly to the right lung so the nodule and nearby fissure appear together. Keep windowing standard and geometry unchanged."
   },
   {
-    "idx": 57,
+    "idx": 111,
     "image": "medical_reasoning/2.jpg",
     "category": "medical reasoning",
     "question": "What is the distribution pattern of stenotic segments?",
     "reasoning_prompt": "Show the full axial CT, then pan and zoom smoothly to the right lung so the nodule and nearby fissure appear together. Keep windowing standard and geometry unchanged."
   },
   {
-    "idx": 58,
+    "idx": 112,
     "image": "medical_reasoning/3.jpg",
     "category": "medical reasoning",
     "question": "Is cardiomegaly present?",
     "reasoning_prompt": "Show the full PA chest view, then adjust framing to include both the heart silhouette and the widest inner thoracic diameter at a fixed scale. Keep contrast and geometry unchanged, holding steady for visual CTR estimation."
+  },
+  {
+    "idx": 113,
+    "image": "medical_reasoning/4.jpg",
+    "category": "medical reasoning",
+    "question": "Which part of the lung is affected by the pneumothorax in the image?",
+    "reasoning_prompt": "Single continuous take with no cuts. Start with a static axial chest CT slice (1\u20132 s), then smoothly pan/zoom toward the right lung while keeping a fissure landmark in view. Frame the shot so the nodule and nearest fissure appear together for lobe identification, and hold for 1\u20132 s. Keep standard lung windowing; anatomy remains unchanged."
+  },
+  {
+    "idx": 114,
+    "image": "medical_reasoning/5.jpg",
+    "category": "medical reasoning",
+    "question": "Is there a tumor in the image?",
+    "reasoning_prompt": "Start with a full-view slice to establish normal anatomy. Then slowly zoom toward any region that appears abnormal in density or shape while keeping nearby tissue for comparison. Hold briefly over the suspected area to assess margins and texture before deciding if a mass is present. No window/level changes."
+  },
+  {
+    "idx": 115,
+    "image": "medical_reasoning/6.jpg",
+    "category": "medical reasoning",
+    "question": "Does fundus image show glaucoma?",
+    "reasoning_prompt": "Begin with a full fundus view to establish disc symmetry and vessel pattern. Then slowly zoom toward the optic disc while keeping surrounding retina visible for context. Center on the cup-to-disc area and hold briefly to inspect rim thickness and vessel bending. No color or contrast change; no extra markings."
+  },
+  {
+    "idx": 116,
+    "image": "medical_reasoning/7.jpg",
+    "category": "medical reasoning",
+    "question": "Is anything not normal in the image?",
+    "reasoning_prompt": "Start with a full-view slice to establish normal anatomy. Slowly scan across the image to detect asymmetry or unusual structures. Pause and zoom slightly on any region that deviates from typical tissue appearance, keeping nearby normal tissue visible for comparison. No window changes or labels."
+  },
+  {
+    "idx": 117,
+    "image": "medical_reasoning/8.jpg",
+    "category": "medical reasoning",
+    "question": "Does the upper half of the ultrasound show benign tumors?",
+    "reasoning_prompt": "Start with the full ultrasound frame to understand overall tissue texture. Then gently focus on the upper half, comparing lesion echogenicity and borders with surrounding tissue. Hold briefly over any round, well-defined, homogeneous areas suggestive of benign patterns. No gain/contrast changes."
+  },
+  {
+    "idx": 118,
+    "image": "medical_reasoning/9.jpg",
+    "category": "medical reasoning",
+    "question": "Is there any evidence of air fluid levels in the patient's bowel?",
+    "reasoning_prompt": "Single continuous take with no cuts. Start with a static abdominal imaging view (1\u20132 s), then smoothly pan and lightly zoom across the bowel loops to assess for air\u2013fluid levels. Keep exposure and windowing consistent, with steady camera motion and clear views of gas patterns and fluid interfaces. Hold the final frame for 1\u20132 s, with no anatomical or geometric changes."
+  },
+  {
+    "idx": 119,
+    "image": "medical_reasoning/10.jpg",
+    "category": "medical reasoning",
+    "question": "Is the fat surrounding the pancreas nromal",
+    "reasoning_prompt": "Single continuous take with no cuts. Start with a static axial abdominal CT slice centered on the pancreas (1\u20132 s), then smoothly pan/zoom around the peripancreatic region to assess the surrounding fat. Keep abdominal windowing consistent and hold the final view for 1\u20132 s. Only the camera moves; anatomy stays unchanged."
   }
 ]
