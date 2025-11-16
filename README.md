@@ -59,12 +59,12 @@ We curate MME-CoF, a compact benchmark providing a standardized taxonomy and an 
 
 
 <p align="center">
-  <img src="figs/radar.png" alt="MME-CoF radar evaluation" width="35%">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="figs/wordcloud.png" alt="MME-CoF word cloud" width="25%">
+  <img src="figs/radar.png" alt="MME-CoF radar evaluation" width="45%">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="figs/wordcloud.png" alt="MME-CoF word cloud" width="35%">
 </p>
 
-<p align="center"><em>Evaluation Radar Map, Category Distribution, and Word Cloud of MME-CoF.</em></p>
+<p align="center"><em>Evaluation Radar Map and Word Cloud of MME-CoF.</em></p>
 
 
 ## 📜 Citation
