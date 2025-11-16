@@ -6,6 +6,7 @@ Official repository for the project "[Are Video Models Ready as Zero-Shot Reason
 
 
 ## 💥 News
+- **[2025.11.15]** 🔥 We expand MME-CoF to 120 total entries, with 10 high-quality samples per category to support a more comprehensive and reliable evaluation. Please access the updated benchmark on [🤗 [HF Datasets](https://huggingface.co/datasets/ZiyuG/MME-CoF)]. The leaderboard will be refreshed shortly.
 - **[2025.11.04]** 🔥 We release the [evaluation code](https://github.com/ZiyuGuo99/MME-CoF?tab=readme-ov-file#-evaluation).
 - **[2025.11.03]** 🔥 We publish MME-CoF benchmark data at [[🤗 Huggingface Dataset]](https://huggingface.co/datasets/ZiyuG/MME-CoF).
 - **[2025.11.01]** 🚀 We release the [arXiv paper](https://arxiv.org/pdf/2510.26802).
