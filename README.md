@@ -6,6 +6,7 @@ Official repository for the project "[Are Video Models Ready as Zero-Shot Reason
 
 
 ## 💥 News
+- **[2025.11.15]** 🔥 We update the MME-CoF results for the Wan 2.2 series and HunyuanVideo, alongside the previously reported results for the closed-source Veo 3 series, Sora 2 series, Kling, and Seedance. The leaderboard covering all evaluated models on the updated benchmark will be refreshed shortly.
 - **[2025.11.15]** 🔥 We expand MME-CoF to support a more comprehensive and reliable evaluation. Please access the updated benchmark on [🤗 [HF Datasets](https://huggingface.co/datasets/ZiyuG/MME-CoF)]. The leaderboard will be refreshed shortly.
 - **[2025.11.04]** 🔥 We release the [evaluation code](https://github.com/ZiyuGuo99/MME-CoF?tab=readme-ov-file#-evaluation).
 - **[2025.11.03]** 🔥 We publish MME-CoF benchmark data at [[🤗 Huggingface Dataset]](https://huggingface.co/datasets/ZiyuG/MME-CoF).
