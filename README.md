@@ -73,8 +73,8 @@ We curate MME-CoF, a compact benchmark providing a standardized taxonomy and an 
 If you find this work useful, please cite:
 
 ```bibtex
-@article{guo2025mme-cof,
-  title={Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-COF Benchmark},
+@article{guo2025video,
+  title={Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark},
   author={Guo, Ziyu and Chen, Xinyan and Zhang, Renrui and An, Ruichuan and Qi, Yu and Jiang, Dongzhi and Li, Xiangtai and Zhang, Manyuan and Li, Hongsheng and Heng, Pheng-Ann},
   journal={arXiv preprint arXiv:2510.26802},
   year={2025}
